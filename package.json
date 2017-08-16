@@ -15,10 +15,14 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-mixin": "^2.0.2",
-    "webpack": "^3.5.3",
-    "webpack-dev-server": "^2.5.0"
+    "webpack": "^3.5.4",
+    "webpack-dev-server": "^2.7.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Liuzhe0820/gitReact.git"
