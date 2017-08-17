@@ -22,7 +22,7 @@ export default class ComponentHeader extends React.Component{
       }
     }
     return (
-      <header style={styleComponentHeader.header} className = 'smallFontSize' onClick = {this.switchHeader.bind(this)}>
+      <header style={styleComponentHeader.header} className = 'smallFontSize'>
         <h1>这里是头部</h1>
       </header>
     )

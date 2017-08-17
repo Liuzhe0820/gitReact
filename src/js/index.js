@@ -6,7 +6,7 @@ var ReactDOM = require('react-dom');
 import ComponentHeader from './compents/header.js';
 import ComponentFooter from './compents/footer.js';
 import IndexBody from './compents/indexBody.js';
-
+import 'antd/dist/antd.css';
 class Index extends React.Component{
   render(){
     return (
@@ -15,7 +15,6 @@ class Index extends React.Component{
         <IndexBody  userId={666}/>
         <ComponentFooter/>
       </section>
-    )
-  }
-}
-ReactDOM.render(<Index/>,document.getElementById('example'));
+    );
+  };
+};

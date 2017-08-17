@@ -4,7 +4,7 @@ module.exports = {
     context:__dirname+'/src',
     entry:[
       'webpack-dev-server/client?http://localhost:8080',
-      './js/index.js'
+      './js/root.js'
     ],
     module:{
         loaders:[
@@ -18,7 +18,7 @@ module.exports = {
             },
             {
               test: /\.css$/,
-              loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+              loader: 'style-loader!css-loader'
             },
         ]
     },

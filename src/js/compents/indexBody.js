@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import BodyChild from './bodyChild.js';
 import ReactMixin from 'react-mixin';
 import MixinLog from './mixins.js';
+import {Input} from 'antd';
 const defaultProps = {
   userName:'啦啦啦'
 }
@@ -31,7 +32,7 @@ export default class IndexBody extends React.Component{
         <h2>好多的内容</h2>
         <p>{this.state.age}</p>
         <div>userName:{this.props.userName}userId:{this.props.userId}</div>
-        <input id='submitBtn' ref='submitBtn' type='button' value='提交'onClick={this.changeUserInfo.bind(this)}/>
+        <Input id='submitBtn' ref='submitBtn' type='button' value='提交'onClick={this.changeUserInfo.bind(this)}/>
         <BodyChild {...this.props} id={6} handleChildValueChange={this.handleChildValueChange.bind(this)}/>
       </section>
     )

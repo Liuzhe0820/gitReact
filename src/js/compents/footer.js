@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-var footCss = require('./foot.css');
-// var footerCss  =  require("../../css/foot.css");
+var footCss = require('../../css/foot.css');
 export default class ComponentFooter extends React.Component{
   render(){
     console.log(footCss);
